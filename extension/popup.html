@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreatAdvisor</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="logo-mark">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 1.5L2 5v4c0 3 2.5 5.5 6 6 3.5-.5 6-3 6-6V5L8 1.5z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1>ThreatAdvisor</h1>
+                    <p class="subtitle">Email phishing detector</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="scanBtn" class="scan-btn" type="button">Scan email</button>
+        <p class="hint">Open an email in Gmail, then scan it.</p>
+
+        <!-- Email Analysis Result -->
+        <div id="emailResult" class="email-result-container hidden">
+            <div class="email-result-header">
+                <span class="email-icon">✉️</span>
+                <span class="email-result-title">Email Analysis</span>
+            </div>
+
+            <div class="email-result-body">
+                <div class="email-field">
+                    <span class="field-label">Verdict</span>
+                    <span class="field-value verdict-badge" id="emailPhishing">—</span>
+                </div>
+
+                <div class="email-field">
+                    <span class="field-label">Phishing probability</span>
+                    <span class="field-value" id="emailProbability">—</span>
+                </div>
+
+                <div class="email-field">
+                    <span class="field-label">Confidence</span>
+                    <span class="field-value confidence-value" id="emailConfidence">—</span>
+                </div>
+
+                <div class="email-field">
+                    <span class="field-label">Reason</span>
+                    <span class="field-value" id="emailReason">—</span>
+                </div>
+
+                <div class="email-field">
+                    <span class="field-label">Indicators</span>
+                    <ul class="field-value indicator-list" id="emailIndicators"></ul>
+                </div>
+
+                <div class="email-field">
+                    <span class="field-label">Recommendation</span>
+                    <span class="field-value" id="emailRecommendation">—</span>
+                </div>
+
+                <div class="email-field">
+                    <span class="field-label">Preview</span>
+                    <span class="field-value email-preview" id="emailInput">—</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="error hidden">
+            <p id="errorText"></p>
+            <button id="dismissError" class="dismiss-btn" type="button">Dismiss</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
