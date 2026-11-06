@@ -36,11 +36,11 @@ MailGuard currently analyzes the most recently expanded message in a Gmail conve
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/MailGuard.git
+git clone https://github.com/gamestag-py/MailGuard.git
 cd MailGuard
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username.
+Replace `gamestag-py` with your GitHub username.
 
 ### 2. Create a virtual environment
 
