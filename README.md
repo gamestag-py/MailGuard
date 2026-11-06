@@ -40,7 +40,6 @@ git clone https://github.com/gamestag-py/MailGuard.git
 cd MailGuard
 ```
 
-Replace `gamestag-py` with your GitHub username.
 
 ### 2. Create a virtual environment
 
