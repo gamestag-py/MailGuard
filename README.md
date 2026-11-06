@@ -219,4 +219,4 @@ MailGuard/
 
 ## License
 
-Add a `LICENSE` file to the repository if you want to specify how others may use, modify, and distribute this project.
+If you find MailGuard useful, consider giving the repository a ⭐ on GitHub. It helps the project grow and reach more people.
